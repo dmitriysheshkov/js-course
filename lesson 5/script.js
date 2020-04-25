@@ -1,13 +1,17 @@
 'use strict';
+// операторы в JS
 
-let arr = ['первый', 'второй', 'третьий'];
+// - / * здесь всё, как обычно
 
-console.log(arr[0]);
+// Плюс - стоит особняком
+// конкатенация
+// console.log('string ' + 4);
+// преобразование к числу с помощью +
+// let answer = +prompt('Сколько Вам лет?', '');
+// console.log(typeof(answer));
 
-// alert('Hello World!');
+// инкремент декремент
+// let incr = 10,
+//     decr = 10;
 
-// let answer = confirm('Are you here?');
-// console.log(answer);
-
-let answer = prompt('Есть ли вам 18?', 'Да');
-console.log(answer);
+// console.log(++incr, --decr);
