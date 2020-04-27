@@ -1,7 +1,11 @@
 'use strict';
 
 let money,
-    time;
+    time,
+    monthBudget;
+
+const MONTH = 30;
+
     
 let question = {
     budget: 'Ваш бюджет на месяц?',
@@ -32,3 +36,8 @@ appData.timeData = time;
 for (let i = 0; i < 2; i++) {
     appData.expenses[getAnswer(question.expenditure, '')] = getAnswer(question.howMuch, '');
 }
+
+monthBudget = appData.budget / MONTH;
+console.log(monthBudget);
+
+alert('Ваш бюджет на месяц: ' + monthBudget);
