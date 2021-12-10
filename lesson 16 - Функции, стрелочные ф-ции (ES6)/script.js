@@ -1,11 +1,8 @@
-'use strict';
+// объявление функций
 
-let num = 20;
-
-function showFirstMessage() {
-    let num = 10;
-    console.log(num);
+// 
+function showFirstMessage (text) { // в скобках ПАРАМЕТРЫ, а передавать будем аргументы
+    console.log(text);
 }
 
-showFirstMessage();
-console.log(num);
+showFirstMessage('Hello World!');
