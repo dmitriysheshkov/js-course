@@ -40,9 +40,29 @@ logger();
 
 
 // объявление стрелочной функции (ES6, 2015 год)
-const numCalc = (a, b) => { return a + b; };
+const numCalc = (a) => a * a;
+console.log(numCalc(5, 6));
 
-numCalc(5, 6);
+// пример поиска мансимального нечётного числа из массива с пом arrow function
+const arr = ['1', '3', '2', '4'];
+
+const res = arr
+    .map((el) => parseInt(el))
+    .filter((num) => num%2)
+    .reduce((max, value) => Math.max(max, value, 0));
+
+console.log(res);
+
+// если в блоке инструкций функции строк больше, чем одна, то их нужно заключать в фигурные скобки,
+// при этом интсрукция return становится обязательной
+const numCalc2 = (a) => {
+    return a * a;
+};
+
+console.log(numCalc2(5, 6));
+
+// нужно разобраться как всё-таки работает this и prototype в стрелочных функциях. (см. Буру, урок 9)
+
 
 
 
